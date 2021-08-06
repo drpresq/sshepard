@@ -47,7 +47,7 @@ if __name__ == '__main__':
     log_level = logging.DEBUG
     logging.basicConfig(level=log_level)
 
-    parser = argparse.ArgumentParser(description='herd your flock of ssh hosts', prog='SSHepard',
+    parser = argparse.ArgumentParser(description='SSHepherd - herd your flock of ssh hosts', prog='sshepard',
                                      formatter_class=argparse.RawTextHelpFormatter, epilog='''
     Common Usage:
     \tsshepard -a list-users -t 192.168.1.1 192.168.1.2\t\t\t\t\t\t\tReturns a list of users by IP
