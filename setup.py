@@ -4,19 +4,18 @@ with open("README.md", "r") as fh:
     long_desc = fh.read()
 
 setup(
-    name='sshepard',
+    name='sshepherd',
     version="0.1",
-    packages=["sshepard"],
+    packages=["sshepherd"],
     package_dir={'': "src"},
-    scripts=['scripts/sshepard'],
+    scripts=['scripts/sshepherd'],
     author="George",
     author_email="drpresq@gmail.com",
-    description="Onboard-Py: Automated SSH User Management",
+    description="SSHepherd: Automated SSH User Management",
     long_description=long_desc,
     long_description_content_type="text/markdown",
-    url="https://github.com/drpresq/onboard-py",
+    url="https://github.com/drpresq/sshepherd",
     keywords="",
     classifiers=[
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
     ],
 )
