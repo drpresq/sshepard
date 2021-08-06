@@ -1,8 +1,8 @@
 """
-ssh.py - Part of Onboard-py
+ssh.py - Part of SSHepherd
 
 :author: George <drpresq@gmail.com>
-:description: Onboard-py SSH module - Consists of objects that define communication with ssh hosts
+:description: SSHepherd SSH module - Consists of objects that define communication with ssh hosts
 :license: GPL3
 :donation:
     BTC - 15wRP3NGm2zQwsC36gYAMf8ZaBNuDP6BiR
