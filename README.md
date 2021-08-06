@@ -1,15 +1,15 @@
-# SSHepard: Automated SSH Host Management
+# SSHepherd: Automated SSH Host Management
 
 ## Description
 
-SSHepard eases integration of new user accounts for SSH hosts without centralized user management by:
+SSHepherd eases integration of new user accounts for SSH hosts without centralized user management by:
 * Creating the new user account on the target host
 * Adding them to security groups as applicable
 * Placing ssh public keys as applicable
 
 ## Features
 
-SSHepard is also capable of some other user management features:
+SSHepherd is also capable of some other user management features:
 * Take an inventory of users on each system
 * Delete users from system groups
 * A variety of functions across system groups:
@@ -21,14 +21,14 @@ SSHepard is also capable of some other user management features:
 ## Install
 
 ```
-git clone https://github.com/drpresq/sshepard.git
-pip3 install ./sshepard
+git clone https://github.com/drpresq/sshepherd.git
+pip3 install ./sshepherd
 ```
 
 ## Usage
 
 ```
-usage: sshepard [-h] [-a {list-users,add-users,run-command}]
+usage: sshepherd [-h] [-a {list-users,add-users,run-command}]
                 [-t TARGETS [TARGETS ...]] [-p PATH]
                 [-c COMMAND [COMMAND ...]]
 
@@ -54,8 +54,8 @@ optional arguments:
                         
 
     Common Usage:
-	sshepard -a list-users -t 192.168.1.1 192.168.1.2				Returns a list of users by IP
-	sshepard -a add-users -t 192.168.1.1 -p /home/user/pub-keys			Add users to each target based on key name
-	sshepard -a run-command -t 192.168.1.1 -c sudo whoami; cat /etc/passwd		Runs the two commands on each target
+	sshepherd -a list-users -t 192.168.1.1 192.168.1.2				Returns a list of users by IP
+	sshepherd -a add-users -t 192.168.1.1 -p /home/user/pub-keys			Add users to each target based on key name
+	sshepherd -a run-command -t 192.168.1.1 -c sudo whoami; cat /etc/passwd		Runs the two commands on each target
 ```
 
