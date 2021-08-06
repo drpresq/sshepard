@@ -1,0 +1,10 @@
+site_name: SSHepherd - Herd Your Flock!
+site_description: SSHepherd - Herd Your Flock!
+site_author: 'George <drpresq@gmail.com>'
+nav:
+    - Home: 'index.md'
+    - Quick Start: 'start.md'
+theme:
+    name: readthedocs
+markdown_extensions:
+    - attr_list

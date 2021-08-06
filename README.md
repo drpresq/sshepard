@@ -1,5 +1,9 @@
 # SSHepherd: Automated SSH Host Management
 
+<p align="center">
+<img alt="SSHepherd - Herd Your Flock!" src="docs/docs/media/sshepard.png">
+</p>
+
 ## Description
 
 SSHepherd eases integration of new user accounts for SSH hosts without centralized user management by:
