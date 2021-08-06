@@ -24,6 +24,13 @@ SSHepherd is also capable of some other user management features:
 
 ## Install
 
+### From PIP
+
+```
+pip3 install sshepherd
+```
+
+### From Source
 ```
 git clone https://github.com/drpresq/sshepherd.git
 pip3 install ./sshepherd
