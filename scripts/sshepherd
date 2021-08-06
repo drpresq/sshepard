@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-sshepard.py - Part of Onboard-py
+sshepherd - part of sshepherd
 
 :author: George <drpresq@gmail.com>
-:description: Onboard-py SSH module - Consists of objects that define communication with ssh hosts
+:description:  sshepherd consists of the run script that executes the sshepherd module
 :license: GPL3
 :donation:
     BTC - 15wRP3NGm2zQwsC36gYAMf8ZaBNuDP6BiR
@@ -12,7 +12,7 @@ sshepard.py - Part of Onboard-py
 
 import argparse
 import logging
-from sshepard.ssh import *
+from sshepherd.ssh import *
 
 
 def parse_command(command: Union[str, list]) -> str:
@@ -47,12 +47,12 @@ if __name__ == '__main__':
     log_level = logging.DEBUG
     logging.basicConfig(level=log_level)
 
-    parser = argparse.ArgumentParser(description='SSHepherd - herd your flock of ssh hosts', prog='sshepard',
+    parser = argparse.ArgumentParser(description='SSHepherd - herd your flock of ssh hosts', prog='sshepherd',
                                      formatter_class=argparse.RawTextHelpFormatter, epilog='''
     Common Usage:
-    \tsshepard -a list-users -t 192.168.1.1 192.168.1.2\t\t\t\t\t\t\tReturns a list of users by IP
-    \tsshepard -a add-users -t 192.168.1.1 -p /home/user/pub-keys\t\t\t\t\tAdd users to each target based on key name
-    \tsshepard -a run-command -t 192.168.1.1 -c sudo whoami; cat /etc/passwd\t\tRuns the two commands on each target
+    \tsshepherd -a list-users -t 192.168.1.1 192.168.1.2\t\t\t\t\t\t\tReturns a list of users by IP
+    \tsshepherd -a add-users -t 192.168.1.1 -p /home/user/pub-keys\t\t\t\t\tAdd users to each target based on key name
+    \tsshepherd -a run-command -t 192.168.1.1 -c sudo whoami; cat /etc/passwd\t\tRuns the two commands on each target
                                      ''')
 
     arguments: list = [('-a', '--action', '\nAction to be carried out on targets\n\n',
