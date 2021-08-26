@@ -15,6 +15,15 @@ setup(
     long_description=long_desc,
     long_description_content_type="text/markdown",
     url="https://github.com/drpresq/sshepherd",
+    install_requires=[
+        "paramiko>=2.7.2",
+        "scp==0.13.6"
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=6.2.4'
+        ]
+    },
     keywords="",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
