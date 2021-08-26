@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='sshepherd',
-    version="0.1",
+    version="0.2",
     packages=["sshepherd"],
     package_dir={'': "src"},
     scripts=['scripts/sshepherd'],
